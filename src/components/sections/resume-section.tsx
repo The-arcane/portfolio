@@ -3,20 +3,19 @@ import { resumeData } from '@/data/mock';
 import { SectionWrapper } from '@/components/shared/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, Download, GraduationCap, Cog, Award, Star } from 'lucide-react';
+import { Briefcase, Download, GraduationCap, Cog, Award, Star, ExternalLink } from 'lucide-react';
 
 export function ResumeSection() {
   return (
     <SectionWrapper id="resume" title="My Resume">
       <div className="text-center mb-12">
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-          {/* This link expects resume.pdf to be in the public folder */}
-          <a href="/resume.pdf" download="RaunaqAdlakha-Resume.pdf">
-            <Download className="mr-2 h-5 w-5" />
-            Download Resume
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <ExternalLink className="mr-2 h-5 w-5" />
+            View Resume
           </a>
         </Button>
-        <p className="text-xs text-muted-foreground mt-2">(User: Please place your resume.pdf in the /public folder)</p>
+        <p className="text-xs text-muted-foreground mt-2">(User: Ensure resume.pdf is in the /public folder)</p>
       </div>
 
       <div className="space-y-12">
