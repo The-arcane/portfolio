@@ -117,7 +117,7 @@ export default {
         'fadeIn': 'fadeIn 0.8s ease-out forwards', 
         'title-underline-draw': 'title-underline-draw 0.5s ease-out forwards',
         'title-underline-draw-delayed': 'title-underline-draw 0.5s ease-out 0.4s forwards',
-        'subtle-gradient': 'subtle-gradient 3s ease infinite', /* Made animation faster */
+        'subtle-gradient': 'subtle-gradient 20s ease infinite', /* Made animation much slower */
         'pop': 'pop 0.3s ease-out',
         'wiggle-hover': 'wiggle 0.5s ease-in-out infinite', 
       },
