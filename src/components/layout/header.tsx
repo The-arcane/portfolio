@@ -10,8 +10,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-5xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2 group">
-          <Zap className="h-6 w-6 text-primary transition-transform duration-300 ease-in-out group-hover:scale-125 group-hover:rotate-[-25deg] group-hover:animate-wiggle-hover" />
-          <span className="font-bold font-headline text-lg text-primary-foreground transition-all duration-300 ease-in-out group-hover:tracking-wider group-hover:text-accent">FolioForge</span>
+          <Zap className="h-6 w-6 text-primary transition-transform duration-300 ease-in-out group-hover:animate-wiggle-hover" />
+          <span className="font-bold font-headline text-lg text-primary-foreground transition-all duration-300 ease-in-out group-hover:tracking-wider group-hover:text-accent group-hover:animate-pop">FolioForge</span>
         </Link>
         
         <nav className="hidden md:flex gap-6 ml-auto">
@@ -37,8 +37,8 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
               <nav className="flex flex-col gap-4 mt-8">
               <Link href="/" className="mb-4 flex items-center space-x-2 group">
-                <Zap className="h-6 w-6 text-primary group-hover:scale-125 group-hover:rotate-[-25deg] transition-transform duration-300 ease-in-out" />
-                <span className="font-bold font-headline text-lg text-primary-foreground group-hover:tracking-wider transition-all duration-300 ease-in-out">FolioForge</span>
+                <Zap className="h-6 w-6 text-primary group-hover:animate-wiggle-hover transition-transform duration-300 ease-in-out" />
+                <span className="font-bold font-headline text-lg text-primary-foreground group-hover:tracking-wider group-hover:text-accent group-hover:animate-pop transition-all duration-300 ease-in-out">FolioForge</span>
               </Link>
                 {navItems.map((item) => (
                   <Link

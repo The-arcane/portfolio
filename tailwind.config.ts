@@ -90,36 +90,36 @@ export default {
           },
         },
         'fadeIn': {
-          '0%': { opacity: '0', transform: 'translateY(20px)' }, // Slightly reduced translateY
+          '0%': { opacity: '0', transform: 'translateY(10px)' }, 
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         'title-underline-draw': {
           '0%': { transform: 'scaleX(0)' },
           '100%': { transform: 'scaleX(1)' },
         },
-        'subtle-gradient': { // Renamed for clarity, made faster
+        'subtle-gradient': { 
           '0%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
         'pop': {
           '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.1)' }, // Increased pop effect
+          '50%': { transform: 'scale(1.15)' }, 
         },
-        'wiggle': { // New wiggle animation
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+        'wiggle': { 
+          '0%, 100%': { transform: 'rotate(-5deg) scale(1)' }, 
+          '50%': { transform: 'rotate(5deg) scale(1.1)' },
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'fadeIn': 'fadeIn 0.6s ease-out forwards', // Slightly faster fadeIn
+        'fadeIn': 'fadeIn 0.8s ease-out forwards', 
         'title-underline-draw': 'title-underline-draw 0.5s ease-out forwards',
-        'title-underline-draw-delayed': 'title-underline-draw 0.5s ease-out 0.3s forwards',
-        'subtle-gradient': 'subtle-gradient 15s ease infinite', // Faster gradient animation
+        'title-underline-draw-delayed': 'title-underline-draw 0.5s ease-out 0.4s forwards',
+        'subtle-gradient': 'subtle-gradient 10s ease infinite', 
         'pop': 'pop 0.3s ease-out',
-        'wiggle-hover': 'wiggle 0.4s ease-in-out infinite', // For applying wiggle on hover
+        'wiggle-hover': 'wiggle 0.5s ease-in-out infinite', 
       },
     },
   },
