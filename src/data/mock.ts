@@ -1,5 +1,5 @@
-import type { Project, ExperienceItem, EducationItem, SkillItem, UserProfile, ContactInfo, NavItem } from '@/types';
-import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, ExternalLink, Code } from 'lucide-react';
+import type { Project, ExperienceItem, EducationItem, SkillItem, UserProfile, ContactInfo, NavItem, ResumeData, AchievementItem } from '@/types';
+import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, ExternalLink, Code, Award, Star } from 'lucide-react';
 
 export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
@@ -9,107 +9,117 @@ export const navItems: NavItem[] = [
 ];
 
 export const userProfileData: UserProfile = {
-  name: "Alex Johnson",
-  title: "Full-Stack Developer | UI/UX Enthusiast | Tech Innovator",
+  name: "Raunaq Adlakha",
+  title: "Aspiring Technologist & Entrepreneur | Web, AI, & ML Enthusiast",
   bio: [
-    "A highly motivated and creative Full-Stack Developer with 5+ years of experience in designing, developing, and deploying web applications. Passionate about clean code, intuitive user experiences, and leveraging technology to solve real-world problems.",
-    "I thrive in dynamic environments, continuously learning and adapting to new challenges. My expertise spans across various technologies including React, Node.js, Python, and cloud platforms. Looking to contribute to innovative projects that make an impact."
+    "I'm a highly motivated student with a passion for technology, innovation, and entrepreneurship. With a strong background in web development, AI, and Machine Learning, I thrive on building real-world solutions and taking initiative.",
+    "I'm currently an active core member of two entrepreneurial societies, contributing to event planning, innovation strategy, and investor engagement. I'm also in the process of establishing a dedicated technical society to foster coding culture, organize tech events, and support student developers. I believe in collaboration, creative thinking, and making meaningful impact through tech."
   ],
 };
 
 export const projectsData: Project[] = [
   {
-    id: '1',
-    title: 'E-commerce Platform "ShopSphere"',
-    description: 'A full-featured e-commerce platform with admin dashboard, user authentication, product management, and Stripe integration for payments. Built with Next.js, Tailwind CSS, and Prisma.',
+    id: 'proj1',
+    title: 'UHIcare - Digital Open Healthcare Ecosystem',
+    description: 'An inclusive platform connecting doctors and patients while promoting accessible healthcare and integrated wellness tools.',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'online shopping',
-    tags: ['Next.js', 'React', 'Tailwind CSS', 'Prisma', 'Stripe'],
-    liveUrl: '#',
-    repoUrl: '#',
+    imageHint: 'healthcare platform',
+    tags: ['Healthcare', 'Wellness', 'Web Platform'],
+    liveUrl: undefined, // Not specified in resume
+    repoUrl: undefined, // Not specified in resume
   },
   {
-    id: '2',
-    title: 'Task Management App "TaskMaster"',
-    description: 'A collaborative task management application allowing users to create projects, assign tasks, and track progress. Features real-time updates using WebSocket.',
+    id: 'proj2',
+    title: 'HealthBot - Symptom-Based Health Assistant',
+    description: 'Analyzes user input to suggest home remedies, yoga, ayurvedic care, and recommend relevant doctors based on reported conditions.',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'productivity tool',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'WebSocket'],
-    liveUrl: '#',
+    imageHint: 'health assistant',
+    tags: ['AI', 'Chatbot', 'Healthcare'],
+    liveUrl: undefined,
+    repoUrl: undefined,
   },
   {
-    id: '3',
-    title: 'Personal Portfolio Website',
-    description: 'This very portfolio website, designed to showcase my skills and projects. Built with Next.js and ShadCN UI components, focusing on a clean and modern aesthetic.',
+    id: 'proj3',
+    title: 'DocBot - VC Transcription & Prescription Tool',
+    description: 'Auto-transcribes doctor-patient video consultations and generates initial prescriptions to streamline medical workflows.',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'web design',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ShadCN UI'],
-    repoUrl: '#',
+    imageHint: 'medical transcription',
+    tags: ['AI', 'Transcription', 'Healthcare'],
+    liveUrl: undefined,
+    repoUrl: undefined,
   },
 ];
 
-export const resumeData = {
+export const resumeData: ResumeData = {
   experience: [
     {
       id: 'exp1',
-      role: 'Senior Software Engineer',
-      company: 'Tech Solutions Inc.',
-      dateRange: 'Jan 2021 - Present',
+      role: 'CORE MEMBER',
+      company: 'ED Mantics - The Entrepreneurship Development Cell',
+      dateRange: '2024 - present',
       responsibilities: [
-        'Led development of key features for a SaaS product, improving performance by 20%.',
-        'Mentored junior developers and conducted code reviews.',
-        'Collaborated with product managers to define project requirements.',
+        "Promoting entrepreneurial thinking through workshops, mentorship, and startup pitch events.",
+        "Successfully part of the organizing team for two major events, including the entrepreneurial Event Avsar, managing outreach, logistics, and execution."
       ],
     },
     {
       id: 'exp2',
-      role: 'Software Developer',
-      company: 'Innovatech Ltd.',
-      dateRange: 'Jun 2018 - Dec 2020',
+      role: 'CORE MEMBER',
+      company: 'Nexel - Incubation Cell',
+      dateRange: '2025 - present',
       responsibilities: [
-        'Developed and maintained web applications using React and Node.js.',
-        'Participated in agile development cycles, including sprint planning and retrospectives.',
-        'Contributed to the design and implementation of RESTful APIs.',
+        "Founding member involved in building the cell from scratch.",
+        "Leading networking and investor outreach, creating connections with mentors and early-stage investors.",
+        "Working on event formats, operational structure, and partnerships to support student-led innovations."
       ],
     },
   ] as ExperienceItem[],
   education: [
     {
       id: 'edu1',
-      institution: 'University of Technology',
-      degree: 'M.S. in Computer Science',
-      dateRange: '2016 - 2018',
-      details: 'Specialized in Software Engineering and AI.',
+      institution: 'BVIMR - BHARATI VIDYAPEETH INSTITUTE OF MANAGEMENT & RESEARCH',
+      degree: 'Bachelor of Computer Applications (BCA)',
+      dateRange: '2024 - present',
+      details: 'Specializing in Programming, Web Development, and AI. Active contributor to entrepreneurship societies. Built multiple real-world applications through project-based learning.',
     },
     {
       id: 'edu2',
-      institution: 'State College',
-      degree: 'B.S. in Information Technology',
-      dateRange: '2012 - 2016',
-      details: 'Graduated with Honors.',
+      institution: 'DL DAV MODEL SCHOOL, PITAMPURA',
+      degree: 'Senior Secondary - Science (Non-Medical)',
+      dateRange: 'Completed', // Date not specified, using "Completed"
+      details: '',
     },
   ] as EducationItem[],
   skills: [
-    { id: 'skill1', name: 'JavaScript (ES6+)', category: 'Programming Languages' },
-    { id: 'skill2', name: 'TypeScript', category: 'Programming Languages' },
-    { id: 'skill3', name: 'Python', category: 'Programming Languages' },
-    { id: 'skill4', name: 'React / Next.js', category: 'Frameworks/Libraries' },
-    { id: 'skill5', name: 'Node.js / Express', category: 'Frameworks/Libraries' },
-    { id: 'skill6', name: 'SQL / NoSQL (MongoDB, PostgreSQL)', category: 'Databases' },
-    { id: 'skill7', name: 'Docker / Kubernetes', category: 'DevOps' },
-    { id: 'skill8', name: 'AWS / GCP', category: 'Cloud' },
-    { id: 'skill9', name: 'Git / GitHub', category: 'Tools' },
-    { id: 'skill10', name: 'Agile Methodologies', category: 'Practices' },
+    { id: 'skill1', name: 'Web Development (HTML, CSS, JavaScript)', category: 'Web Development' },
+    { id: 'skill2', name: 'React, Node.js, Next.js (Beginner)', category: 'Frameworks/Libraries' },
+    { id: 'skill3', name: 'Machine Learning & Generative AI (Gemini, Vertex AI)', category: 'AI/ML' },
+    { id: 'skill4', name: 'Prompt Engineering & AI Tooling', category: 'AI/ML' },
+    { id: 'skill5', name: 'Leadership, Event Management & Team Building', category: 'Soft Skills' },
+    { id: 'skill6', name: 'Investor Communication & Outreach', category: 'Communication' },
+    { id: 'skill7', name: 'Entrepreneurial Strategy & Innovation', category: 'Strategy' },
   ] as SkillItem[],
+  achievements: [
+    { id: 'ach1', description: 'Top 25 Finalist - Hack2Hustle Hackathon (among 200+ teams)' },
+    { id: 'ach2', description: 'Top 5 Finalist - Battle of Coders (BOC) DSA Coding Competition' },
+    { id: 'ach3', description: 'Organized 2 major entrepreneurial events under ED Mantics, including flagship event Avsar' },
+    { id: 'ach4', description: 'Currently building a Technical Society to foster coding, hackathons, and student innovation' },
+  ] as AchievementItem[],
+  certifications: [
+    "Explore Generative AI with the Gemini API in Vertex AI",
+    "Inspect Rich Documents with Gemini Multimodality and Multimodal RAG",
+    "Develop GenAI Apps with Gemini and Streamlit",
+    "Build Real World AI Applications with Gemini and Imagen",
+    "Prompt Design in Vertex AI"
+  ] as string[],
 };
 
 export const contactDataInfo: ContactInfo = {
-  email: 'alex.johnson@example.com',
-  phone: '+1 (555) 000-1111',
+  email: 'raunaq.adlakha@gmail.com',
+  phone: '+91 8826907327',
   socials: [
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/example', icon: Linkedin },
-    { name: 'GitHub', url: 'https://www.github.com/example', icon: Github },
-    { name: 'Email', url: 'mailto:alex.johnson@example.com', icon: Mail },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/raunaq-adlakha-849997316/', icon: Linkedin },
+    { name: 'Email', url: 'mailto:raunaq.adlakha@gmail.com', icon: Mail },
   ],
 };
 
@@ -123,4 +133,6 @@ export const IconMap = {
   Mail,
   Linkedin,
   Github,
+  Award,
+  Star,
 };

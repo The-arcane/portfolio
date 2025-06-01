@@ -55,3 +55,17 @@ export interface ContactInfo {
   phone?: string;
   socials: SocialLink[];
 }
+
+export interface AchievementItem {
+  id: string;
+  description: string;
+  category?: string;
+}
+
+export interface ResumeData {
+  experience: ExperienceItem[];
+  education: EducationItem[];
+  skills: SkillItem[];
+  achievements: AchievementItem[];
+  certifications: string[];
+}
