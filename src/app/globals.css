@@ -66,12 +66,13 @@ body {
   body {
     @apply bg-background text-foreground animate-subtle-gradient;
     background-size: 400% 400%;
+    /* Using brighter, more opaque colors for the animated gradient */
     background-image: linear-gradient(
       -45deg,
       hsl(var(--background)) 0%,
-      hsla(var(--primary), 0.5) 25%, /* Increased opacity for primary */
-      hsla(var(--accent), 0.4) 50%,  /* Increased opacity for accent */
-      hsla(var(--primary), 0.5) 75%, /* Increased opacity for primary */
+      hsla(291, 70%, 50%, 0.8) 25%, /* Brighter purple, more opaque */
+      hsla(180, 80%, 50%, 0.7) 50%,  /* Brighter teal, more opaque */
+      hsla(291, 70%, 50%, 0.8) 75%, /* Brighter purple, more opaque */
       hsl(var(--background)) 100%
     );
   }
