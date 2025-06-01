@@ -3,7 +3,7 @@ import { resumeData } from '@/data/mock';
 import { SectionWrapper } from '@/components/shared/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, Download, GraduationCap, Cog, Award, Star, ExternalLink } from 'lucide-react';
+import { Briefcase, ExternalLink, GraduationCap, Cog, Award, Star } from 'lucide-react';
 
 export function ResumeSection() {
   return (
@@ -15,7 +15,6 @@ export function ResumeSection() {
             View Resume
           </a>
         </Button>
-        <p className="text-xs text-muted-foreground mt-2">(User: Ensure resume.pdf is in the /public folder)</p>
       </div>
 
       <div className="space-y-12">
