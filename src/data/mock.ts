@@ -22,7 +22,7 @@ export const projectsData: Project[] = [
     id: 'proj1',
     title: 'UHIcare - Digital Open Healthcare Ecosystem',
     description: 'An inclusive platform connecting doctors and patients while promoting accessible healthcare and integrated wellness tools.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/uhicare-screenshot.png', // Example: place 'uhicare-screenshot.png' in your 'public' folder
     imageHint: 'healthcare platform',
     tags: ['Healthcare', 'Wellness', 'Web Platform'],
     liveUrl: undefined, // Not specified in resume
@@ -66,7 +66,7 @@ export const resumeData: ResumeData = {
       id: 'exp2',
       role: 'CORE MEMBER',
       company: 'Nexel - Incubation Cell',
-      dateRange: '2025 - present',
+      dateRange: '2025 - present', // Assuming '2025 - present' is a typo and should be current or a past range. Keeping as is from original.
       responsibilities: [
         "Founding member involved in building the cell from scratch.",
         "Leading networking and investor outreach, creating connections with mentors and early-stage investors.",
@@ -86,7 +86,7 @@ export const resumeData: ResumeData = {
       id: 'edu2',
       institution: 'DL DAV MODEL SCHOOL, PITAMPURA',
       degree: 'Senior Secondary - Science (Non-Medical)',
-      dateRange: 'Completed', // Date not specified, using "Completed"
+      dateRange: 'Completed', 
       details: '',
     },
   ] as EducationItem[],
@@ -137,4 +137,3 @@ export const IconMap = {
   Award,
   Star,
 };
-
