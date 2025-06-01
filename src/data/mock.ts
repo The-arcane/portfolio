@@ -119,6 +119,7 @@ export const contactDataInfo: ContactInfo = {
   phone: '+91 8826907327',
   socials: [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/raunaq-adlakha-849997316/', icon: Linkedin },
+    { name: 'GitHub', url: 'https://github.com/The-arcane', icon: Github },
     { name: 'Email', url: 'mailto:raunaq.adlakha@gmail.com', icon: Mail },
   ],
 };
@@ -136,3 +137,4 @@ export const IconMap = {
   Award,
   Star,
 };
+
