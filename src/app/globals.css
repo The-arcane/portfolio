@@ -69,9 +69,9 @@ body {
     background-image: linear-gradient(
       -45deg,
       hsl(var(--background)) 0%,
-      hsla(var(--primary), 0.1) 25%,
-      hsla(var(--accent), 0.05) 50%,
-      hsla(var(--primary), 0.1) 75%,
+      hsla(var(--primary), 0.15) 25%, /* Increased opacity for primary */
+      hsla(var(--accent), 0.1) 50%,  /* Increased opacity for accent */
+      hsla(var(--primary), 0.15) 75%, /* Increased opacity for primary */
       hsl(var(--background)) 100%
     );
   }
@@ -80,7 +80,7 @@ body {
 @layer components {
   /* Animated underline for nav links */
   .animated-underline {
-    @apply relative py-1; /* Added padding for space */
+    @apply relative py-1; /* Removed 'group' from @apply */
   }
   .animated-underline::after {
     content: '';
@@ -91,5 +91,8 @@ body {
   .animated-underline:hover::after,
   .animated-underline:focus::after { /* Added focus state */
     width: 100%;
+  }
+  .animated-underline > span { /* Target span for text animation */
+    @apply transition-transform duration-300 ease-in-out inline-block group-hover:animate-pop;
   }
 }
