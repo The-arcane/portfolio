@@ -11,10 +11,10 @@ export const navItems: NavItem[] = [
 
 export const userProfileData: UserProfile = {
   name: "Raunaq Adlakha",
-  title: "1st Year BCA Student | Aspiring Technologist & Innovator | Web, AI & ML Enthusiast",
+  title: "Aspiring Technologist & Innovator | Web, AI & ML Enthusiast",
   bio: [
-    "I'm a highly motivated 1st-year BCA student with a fervent passion for technology, innovation, and the potential of entrepreneurship. I am actively developing skills in web development, AI, and Machine Learning, and am keen on building real-world solutions and taking initiative.",
-    "As a 1st-year student, I'm already an active core member of two entrepreneurial societies, where I contribute to event planning and innovation strategy. I'm also involved in establishing a technical society to foster coding culture and support student developers. I believe in collaboration, creative thinking, and making a meaningful impact through technology."
+    "I'm a highly motivated student with a fervent passion for technology, innovation, and the potential of entrepreneurship. I am actively developing skills in web development, AI, and Machine Learning, and am keen on building real-world solutions and taking initiative.",
+    "As a student, I'm already an active core member of two entrepreneurial societies, where I contribute to event planning and innovation strategy. I'm also involved in establishing a technical society to foster coding culture and support student developers. I believe in collaboration, creative thinking, and making a meaningful impact through technology."
   ],
 };
 
@@ -67,7 +67,7 @@ export const resumeData: ResumeData = {
       id: 'exp2',
       role: 'CORE MEMBER',
       company: 'Nexel - Incubation Cell',
-      dateRange: '2024 - present', // Corrected from 2025 based on 1st year status
+      dateRange: '2024 - present',
       responsibilities: [
         "Founding member involved in building the cell from scratch.",
         "Leading networking and investor outreach, creating connections with mentors and early-stage investors.",
@@ -80,7 +80,7 @@ export const resumeData: ResumeData = {
       id: 'edu1',
       institution: 'BVIMR - BHARATI VIDYAPEETH INSTITUTE OF MANAGEMENT & RESEARCH',
       degree: 'Bachelor of Computer Applications (BCA)',
-      dateRange: '2023 - 2026 (Expected)', // Assuming a 3-year program starting in 2023 for a 1st year in 2024
+      dateRange: '2023 - 2026 (Expected)',
       details: 'Specializing in Programming, Web Development, and AI. Active contributor to entrepreneurship societies. Built multiple real-world applications through project-based learning.',
     },
     {
