@@ -10,6 +10,7 @@ export function ResumeSection() {
     <SectionWrapper id="resume" title="My Resume">
       <div className="text-center mb-12">
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+          {/* This link expects resume.pdf to be in the public folder */}
           <a href="/resume.pdf" download="RaunaqAdlakha-Resume.pdf">
             <Download className="mr-2 h-5 w-5" />
             Download Resume
