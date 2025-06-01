@@ -64,6 +64,32 @@ body {
     @apply scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground animate-subtle-gradient;
+    background-size: 400% 400%;
+    background-image: linear-gradient(
+      -45deg,
+      hsl(var(--background)) 0%,
+      hsla(var(--primary), 0.1) 25%,
+      hsla(var(--accent), 0.05) 50%,
+      hsla(var(--primary), 0.1) 75%,
+      hsl(var(--background)) 100%
+    );
+  }
+}
+
+@layer components {
+  /* Animated underline for nav links */
+  .animated-underline {
+    @apply relative py-1; /* Added padding for space */
+  }
+  .animated-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-[2px] bg-accent;
+    width: 0;
+    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
+  }
+  .animated-underline:hover::after,
+  .animated-underline:focus::after { /* Added focus state */
+    width: 100%;
   }
 }
