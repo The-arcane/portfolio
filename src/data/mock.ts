@@ -4,8 +4,8 @@ import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, Ext
 
 export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
   { label: 'Resume', href: '#resume' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
     id: 'proj1',
     title: 'UHIcare - Digital Open Healthcare Ecosystem',
     description: 'An inclusive platform connecting doctors and patients while promoting accessible healthcare and integrated wellness tools.',
-    imageUrl: '/uhicare-screenshot.png',
+    imageUrl: 'https://placehold.co/600x400.png', // Updated from /uhicare-screenshot.png
     imageHint: 'healthcare platform',
     tags: ['Healthcare', 'Wellness', 'Web Platform'],
     liveUrl: undefined, 
