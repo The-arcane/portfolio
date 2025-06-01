@@ -1,0 +1,58 @@
+import Link from 'next/link';
+import { navItems } from '@/data/mock';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu, Zap } from 'lucide-react';
+
+export function Header() {
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 max-w-5xl items-center">
+        <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Zap className="h-6 w-6 text-primary" />
+          <span className="font-bold font-headline text-lg text-primary-foreground">FolioForge</span>
+        </Link>
+        
+        <nav className="hidden md:flex gap-6 ml-auto">
+          {navItems.map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-accent-foreground"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="ml-auto md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6 text-primary-foreground" />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
+              <nav className="flex flex-col gap-4 mt-8">
+              <Link href="/" className="mb-4 flex items-center space-x-2">
+                <Zap className="h-6 w-6 text-primary" />
+                <span className="font-bold font-headline text-lg text-primary-foreground">FolioForge</span>
+              </Link>
+                {navItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="block px-2 py-1 text-lg font-medium text-primary-foreground hover:text-accent-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </div>
+    </header>
+  );
+}
