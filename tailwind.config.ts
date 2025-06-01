@@ -102,6 +102,10 @@ export default {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
+        'pop': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -109,7 +113,8 @@ export default {
         'fadeIn': 'fadeIn 0.7s ease-out forwards',
         'title-underline-draw': 'title-underline-draw 0.5s ease-out forwards',
         'title-underline-draw-delayed': 'title-underline-draw 0.5s ease-out 0.3s forwards',
-        'subtle-gradient': 'subtle-gradient 30s ease infinite',
+        'subtle-gradient': 'subtle-gradient 25s ease infinite', // Slightly faster gradient
+        'pop': 'pop 0.3s ease-out',
       },
     },
   },

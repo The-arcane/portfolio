@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { navItems } from '@/data/mock';
 import { Button } from '@/components/ui/button';
@@ -8,9 +9,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-5xl items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Zap className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-lg text-primary-foreground">FolioForge</span>
+        <Link href="/" className="mr-6 flex items-center space-x-2 group">
+          <Zap className="h-6 w-6 text-primary group-hover:scale-125 group-hover:rotate-[-15deg] transition-transform duration-300 ease-in-out" />
+          <span className="font-bold font-headline text-lg text-primary-foreground group-hover:tracking-wide transition-all duration-300 ease-in-out">FolioForge</span>
         </Link>
         
         <nav className="hidden md:flex gap-6 ml-auto">
@@ -35,9 +36,9 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
               <nav className="flex flex-col gap-4 mt-8">
-              <Link href="/" className="mb-4 flex items-center space-x-2">
-                <Zap className="h-6 w-6 text-primary" />
-                <span className="font-bold font-headline text-lg text-primary-foreground">FolioForge</span>
+              <Link href="/" className="mb-4 flex items-center space-x-2 group">
+                <Zap className="h-6 w-6 text-primary group-hover:scale-125 group-hover:rotate-[-15deg] transition-transform duration-300 ease-in-out" />
+                <span className="font-bold font-headline text-lg text-primary-foreground group-hover:tracking-wide transition-all duration-300 ease-in-out">FolioForge</span>
               </Link>
                 {navItems.map((item) => (
                   <Link

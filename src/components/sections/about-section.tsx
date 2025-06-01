@@ -10,7 +10,7 @@ export function AboutSection() {
     <SectionWrapper id="about" title="About Me">
       <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
         <div className="md:col-span-1 flex justify-center md:justify-start">
-           <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-accent shadow-lg">
+           <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-accent shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-accent/50 transition-all duration-300 ease-out">
             <AvatarImage src="/profile-pic.jpeg" alt={userProfileData.name} data-ai-hint="profile picture" />
             <AvatarFallback className="text-4xl bg-primary text-primary-foreground">{userProfileData.name.substring(0,2).toUpperCase()}</AvatarFallback>
           </Avatar>

@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="bg-card border-border shadow-xl transition-all duration-300 flex flex-col h-full hover:scale-[1.03] hover:shadow-2xl hover:shadow-accent/30 hover:border-accent">
+    <Card className="bg-card border-border shadow-xl transition-all duration-300 ease-in-out flex flex-col h-full hover:scale-[1.03] hover:-translate-y-1 hover:shadow-2xl hover:shadow-accent/40 hover:border-accent">
       <CardHeader className="p-0">
         <Image
           src={project.imageUrl}
