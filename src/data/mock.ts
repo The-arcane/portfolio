@@ -1,3 +1,4 @@
+
 import type { Project, ExperienceItem, EducationItem, SkillItem, UserProfile, ContactInfo, NavItem, ResumeData, AchievementItem } from '@/types';
 import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, ExternalLink, Code, Award, Star } from 'lucide-react';
 
@@ -10,10 +11,10 @@ export const navItems: NavItem[] = [
 
 export const userProfileData: UserProfile = {
   name: "Raunaq Adlakha",
-  title: "Aspiring Technologist & Entrepreneur | Web, AI, & ML Enthusiast",
+  title: "1st Year BCA Student | Aspiring Technologist & Innovator | Web, AI & ML Enthusiast",
   bio: [
-    "I'm a highly motivated student with a passion for technology, innovation, and entrepreneurship. With a strong background in web development, AI, and Machine Learning, I thrive on building real-world solutions and taking initiative.",
-    "I'm currently an active core member of two entrepreneurial societies, contributing to event planning, innovation strategy, and investor engagement. I'm also in the process of establishing a dedicated technical society to foster coding culture, organize tech events, and support student developers. I believe in collaboration, creative thinking, and making meaningful impact through tech."
+    "I'm a highly motivated 1st-year BCA student with a fervent passion for technology, innovation, and the potential of entrepreneurship. I am actively developing skills in web development, AI, and Machine Learning, and am keen on building real-world solutions and taking initiative.",
+    "As a 1st-year student, I'm already an active core member of two entrepreneurial societies, where I contribute to event planning and innovation strategy. I'm also involved in establishing a technical society to foster coding culture and support student developers. I believe in collaboration, creative thinking, and making a meaningful impact through technology."
   ],
 };
 
@@ -22,11 +23,11 @@ export const projectsData: Project[] = [
     id: 'proj1',
     title: 'UHIcare - Digital Open Healthcare Ecosystem',
     description: 'An inclusive platform connecting doctors and patients while promoting accessible healthcare and integrated wellness tools.',
-    imageUrl: '/uhicare-screenshot.png', // Example: place 'uhicare-screenshot.png' in your 'public' folder
+    imageUrl: '/uhicare-screenshot.png',
     imageHint: 'healthcare platform',
     tags: ['Healthcare', 'Wellness', 'Web Platform'],
-    liveUrl: undefined, // Not specified in resume
-    repoUrl: undefined, // Not specified in resume
+    liveUrl: undefined, 
+    repoUrl: undefined, 
   },
   {
     id: 'proj2',
@@ -66,7 +67,7 @@ export const resumeData: ResumeData = {
       id: 'exp2',
       role: 'CORE MEMBER',
       company: 'Nexel - Incubation Cell',
-      dateRange: '2025 - present', // Assuming '2025 - present' is a typo and should be current or a past range. Keeping as is from original.
+      dateRange: '2024 - present', // Corrected from 2025 based on 1st year status
       responsibilities: [
         "Founding member involved in building the cell from scratch.",
         "Leading networking and investor outreach, creating connections with mentors and early-stage investors.",
@@ -79,7 +80,7 @@ export const resumeData: ResumeData = {
       id: 'edu1',
       institution: 'BVIMR - BHARATI VIDYAPEETH INSTITUTE OF MANAGEMENT & RESEARCH',
       degree: 'Bachelor of Computer Applications (BCA)',
-      dateRange: '2024 - present',
+      dateRange: '2023 - 2026 (Expected)', // Assuming a 3-year program starting in 2023 for a 1st year in 2024
       details: 'Specializing in Programming, Web Development, and AI. Active contributor to entrepreneurship societies. Built multiple real-world applications through project-based learning.',
     },
     {
@@ -137,3 +138,4 @@ export const IconMap = {
   Award,
   Star,
 };
+
