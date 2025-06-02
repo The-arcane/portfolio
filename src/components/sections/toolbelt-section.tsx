@@ -19,9 +19,7 @@ const tools = [
   { name: 'Node.js', icon: <Server className="w-10 h-10 text-green-600" /> }, // Using Server icon for Node.js
   { name: 'Git', icon: <GitFork className="w-10 h-10 text-orange-600" /> },
   { name: 'Express.js', icon: <span className="text-3xl font-mono text-gray-400">ex</span> },
-  { name: 'MongoDB', icon: <MongoDbIcon /> },
   { name: 'TypeScript', icon: <Badge className="text-2xl p-3 bg-blue-600 text-white hover:bg-blue-700">TS</Badge> },
-  { name: 'AWS', icon: <Cloud className="w-10 h-10 text-orange-500" /> },
   { name: 'PostgreSQL', icon: <Database className="w-10 h-10 text-blue-700" /> }, // Standard Database icon
   { name: 'HTML', icon: <CodeXml className="w-10 h-10 text-orange-700" /> }, // Using CodeXml for HTML
 ];
