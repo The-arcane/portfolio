@@ -1,6 +1,6 @@
 
 import type { Project, ExperienceItem, EducationItem, SkillItem, UserProfile, ContactInfo, NavItem, ResumeData, AchievementItem } from '@/types';
-import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, ExternalLink, Code, Award, Star, Laptop, Wind, Atom, GitFork, Database, Cloud, FileCode, Server, Network, CodeXml } from 'lucide-react'; // Added new icons
+import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, ExternalLink, Code, Award, Star, Laptop, Wind, Atom, GitFork, Database, Cloud, FileCode, Server, Network, CodeXml } from 'lucide-react';
 
 export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
@@ -39,6 +39,26 @@ export const projectsData: Project[] = [
     tags: ['AI', 'Chatbot', 'Healthcare'],
     liveUrl: 'https://healthbot-uhi.netlify.app/',
     repoUrl: undefined,
+  },
+  {
+    id: 'proj3',
+    title: 'Rajasthan Tourism - Virtual Heritage Tour',
+    description: 'Explore the vibrant culture and heritage of Rajasthan with virtual tours of iconic destinations, browse stunning photo galleries, and plan your dream trip with integrated booking for attractions and experiences.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'Rajasthan travel',
+    tags: ['Travel', 'Virtual Tour', 'Booking Platform', 'Web App'],
+    liveUrl: 'https://rajasthann.netlify.app/',
+    repoUrl: undefined,
+  },
+  {
+    id: 'proj4',
+    title: 'TechGear - Gadgets & Accessories Hub',
+    description: 'Your one-stop e-commerce platform for the latest computer peripherals, mobile accessories, and tech gadgets. Browse, compare, and purchase with ease.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageHint: 'tech accessories',
+    tags: ['E-commerce', 'Tech', 'Accessories', 'Online Store'],
+    liveUrl: undefined,
+    repoUrl: 'https://github.com/The-arcane/e-com',
   },
 ];
 
@@ -120,7 +140,7 @@ export const IconMap = {
   Briefcase,
   GraduationCap,
   Lightbulb,
-  Code: CodeXml, // Updated Code to CodeXml for consistency
+  Code: CodeXml, 
   ExternalLink,
   Phone,
   Mail,
