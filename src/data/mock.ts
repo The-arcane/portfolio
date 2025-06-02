@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
     id: 'proj3',
     title: 'Rajasthan Tourism - Virtual Heritage Tour',
     description: 'Explore the vibrant culture and heritage of Rajasthan with virtual tours of iconic destinations, browse stunning photo galleries, and plan your dream trip with integrated booking for attractions and experiences.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/rajasthan.png',
     imageHint: 'Rajasthan travel',
     tags: ['Travel', 'Virtual Tour', 'Booking Platform', 'Web App'],
     liveUrl: 'https://rajasthann.netlify.app/',
@@ -54,7 +54,7 @@ export const projectsData: Project[] = [
     id: 'proj4',
     title: 'TechGear - Gadgets & Accessories Hub',
     description: 'Your one-stop e-commerce platform for the latest computer peripherals, mobile accessories, and tech gadgets. Browse, compare, and purchase with ease.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/tech.png',
     imageHint: 'tech accessories',
     tags: ['E-commerce', 'Tech', 'Accessories', 'Online Store'],
     liveUrl: undefined,
@@ -159,3 +159,4 @@ export const IconMap = {
   Network,
   CodeXml,
 };
+
