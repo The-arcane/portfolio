@@ -1,10 +1,11 @@
 
 import type { Project, ExperienceItem, EducationItem, SkillItem, UserProfile, ContactInfo, NavItem, ResumeData, AchievementItem } from '@/types';
-import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, ExternalLink, Code, Award, Star } from 'lucide-react';
+import { Linkedin, Github, Mail, Phone, Briefcase, GraduationCap, Lightbulb, ExternalLink, Code, Award, Star, Laptop, Wind, Atom, GitFork, Database, Cloud, FileCode, Server, Network, CodeXml } from 'lucide-react'; // Added new icons
 
 export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
   { label: 'Resume', href: '#resume' },
+  { label: 'Toolbelt', href: '#toolbelt'},
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -23,7 +24,7 @@ export const projectsData: Project[] = [
     id: 'proj1',
     title: 'UHIcare - Digital Open Healthcare Ecosystem',
     description: 'An inclusive platform connecting doctors and patients while promoting accessible healthcare and integrated wellness tools.',
-    imageUrl: 'https://placehold.co/600x400.png', // Updated from /uhicare-screenshot.png
+    imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'healthcare platform',
     tags: ['Healthcare', 'Wellness', 'Web Platform'],
     liveUrl: undefined, 
@@ -129,7 +130,7 @@ export const IconMap = {
   Briefcase,
   GraduationCap,
   Lightbulb,
-  Code,
+  Code: CodeXml, // Updated Code to CodeXml for consistency
   ExternalLink,
   Phone,
   Mail,
@@ -137,5 +138,13 @@ export const IconMap = {
   Github,
   Award,
   Star,
+  Laptop,
+  Wind,
+  Atom,
+  GitFork,
+  Database,
+  Cloud,
+  FileCode,
+  Server,
+  Network,
 };
-
