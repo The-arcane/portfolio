@@ -85,8 +85,8 @@ export const resumeData: ResumeData = {
   skills: [
     { id: 'skill1', name: 'Web Development (HTML, CSS, JavaScript)', category: 'Web Development' },
     { id: 'skill2', name: 'React, Node.js, Next.js (Beginner)', category: 'Frameworks/Libraries' },
-    { id: 'skill3', name: 'Machine Learning & Generative AI (Gemini, Vertex AI)', category: 'AI/ML' },
-    { id: 'skill4', name: 'Prompt Engineering & AI Tooling', category: 'AI/ML' },
+    { id: 'skill3', name: 'Machine Learning & Generative AI (Beginner)', category: 'AI/ML' },
+    { id: 'skill4', name: 'Prompt Engineering & AI Tooling (Beginner)', category: 'AI/ML' },
     { id: 'skill5', name: 'Leadership, Event Management & Team Building', category: 'Soft Skills' },
     { id: 'skill6', name: 'Investor Communication & Outreach', category: 'Communication' },
     { id: 'skill7', name: 'Entrepreneurial Strategy & Innovation', category: 'Strategy' },
@@ -139,4 +139,3 @@ export const IconMap = {
   Network,
   CodeXml,
 };
-

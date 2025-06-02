@@ -6,7 +6,7 @@ import { Laptop, Wind, Atom, GitFork, Database, Cloud, FileCode, Server, Network
 // Represents a simplified Leaf icon for MongoDB using SVG
 const MongoDbIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-green-500">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM12 6c-2.03 0-3.87.93-5.08 2.42.61.39 1.28.66 2.01.82C9.88 8.08 10.88 7.5 12 7.5s2.12.58 3.07 1.74c.73-.16 1.4-.43 2.01-.82C15.87 6.93 14.03 6 12 6zm0 11c-1.75 0-3.3-.96-4.13-2.4.53.29 1.1.49 1.7.61C10.62 16.18 11.88 16.5 12 16.5s1.38-.32 2.43-1.29c.6.12 1.17.32 1.7.61C15.3 16.04 13.75 17 12 17z"/>
+    <path d="M12 2C6.48 2 2 6.48 2 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM12 6c-2.03 0-3.87.93-5.08 2.42.61.39 1.28.66 2.01.82C9.88 8.08 10.88 7.5 12 7.5s2.12.58 3.07 1.74c.73-.16 1.4-.43 2.01-.82C15.87 6.93 14.03 6 12 6zm0 11c-1.75 0-3.3-.96-4.13-2.4.53.29 1.1.49 1.7.61C10.62 16.18 11.88 16.5 12 16.5s1.38-.32 2.43-1.29c.6.12 1.17.32 1.7.61C15.3 16.04 13.75 17 12 17z"/>
   </svg>
 );
 
@@ -14,14 +14,14 @@ const MongoDbIcon = () => (
 const tools = [
   { name: 'JavaScript', icon: <Badge className="text-2xl p-3 bg-yellow-400 text-black hover:bg-yellow-500">JS</Badge> },
   { name: 'TailwindCSS', icon: <Wind className="w-10 h-10 text-sky-500" /> },
-  { name: 'React', icon: <Atom className="w-10 h-10 text-sky-400" /> },
-  { name: 'Next.js', icon: <div className="font-bold text-xl border-2 border-foreground rounded-md p-2 w-10 h-10 flex items-center justify-center bg-black">N</div> },
-  { name: 'Node.js', icon: <Server className="w-10 h-10 text-green-600" /> }, // Using Server icon for Node.js
+  { name: 'React (Beginner)', icon: <Atom className="w-10 h-10 text-sky-400" /> },
+  { name: 'Next.js (Beginner)', icon: <div className="font-bold text-xl border-2 border-foreground rounded-md p-2 w-10 h-10 flex items-center justify-center bg-black">N</div> },
+  { name: 'Node.js (Beginner)', icon: <Server className="w-10 h-10 text-green-600" /> },
   { name: 'Git', icon: <GitFork className="w-10 h-10 text-orange-600" /> },
   { name: 'Express.js', icon: <span className="text-3xl font-mono text-gray-400">ex</span> },
   { name: 'TypeScript', icon: <Badge className="text-2xl p-3 bg-blue-600 text-white hover:bg-blue-700">TS</Badge> },
-  { name: 'PostgreSQL', icon: <Database className="w-10 h-10 text-blue-700" /> }, // Standard Database icon
-  { name: 'HTML', icon: <CodeXml className="w-10 h-10 text-orange-700" /> }, // Using CodeXml for HTML
+  { name: 'PostgreSQL', icon: <Database className="w-10 h-10 text-blue-700" /> },
+  { name: 'HTML', icon: <CodeXml className="w-10 h-10 text-orange-700" /> },
 ];
 
 export function ToolbeltSection() {
