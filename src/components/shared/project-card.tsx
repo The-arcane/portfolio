@@ -20,7 +20,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           alt={project.title}
           width={600}
           height={400}
-          className="rounded-t-lg object-cover aspect-[3/2]"
+          className="w-full h-auto max-h-[400px] rounded-t-lg object-contain bg-card"
           data-ai-hint={project.imageHint}
         />
       </CardHeader>

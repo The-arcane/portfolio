@@ -14,7 +14,7 @@ export function Header() {
           <span className="font-bold font-headline text-lg text-primary-foreground transition-all duration-300 ease-in-out group-hover:tracking-wider group-hover:text-accent group-hover:animate-pop">FolioForge</span>
         </Link>
         
-        <nav className="hidden md:flex gap-6"> {/* Removed ml-auto here */}
+        <nav className="hidden md:flex ml-auto gap-6"> {/* Added ml-auto here */}
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -26,7 +26,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ml-auto md:hidden"> {/* This ml-auto pushes the mobile menu to the right */}
+        <div className="ml-auto md:hidden"> {/* This ml-auto pushes the mobile menu to the right, but it's hidden on md+ screens */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
