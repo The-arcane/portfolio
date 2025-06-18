@@ -14,8 +14,15 @@ export const userProfileData: UserProfile = {
   name: "Raunaq Adlakha",
   title: "Aspiring Technologist & Innovator | Web, AI & ML Enthusiast",
   bio: [
-    "I'm a highly motivated student with a fervent passion for technology, innovation, and the potential of entrepreneurship. I am actively developing skills in web development, AI, and Machine Learning, and am keen on building real-world solutions and taking initiative.",
-    "As a student, I'm already an active core member of two entrepreneurial societies, where I contribute to event planning and innovation strategy. I'm also involved in establishing a technical society to foster coding culture and support student developers. I believe in collaboration, creative thinking, and making a meaningful impact through technology."
+    "I’m not just another BCA student with a “passion for tech.” I don’t chase certificates or copy-paste projects. I build systems from scratch, break what doesn’t work, automate the chaos, and then rebuild it stronger.",
+    "I’ve worked on real, functional projects, not just class submissions. From building UHI Care, an open healthcare platform with AI-powered automation, real-time doctor-patient video interaction, and structured data syncing — to crafting MediBot, a wellness assistant that delivers everything from Ayurvedic remedies to fitness routines, booking appointments, setting up reminders, and streamlining user health journeys.",
+    "I even threw myself into side gigs for fun — building a Rajasthan tourism site just to explore creative design and user flow, and later developing TechGear, a full-stack e-commerce platform with a secure admin portal, inventory and stock management, order control, and real-time client-side ordering.",
+    "React. Node.js. Supabase. Automation. n8n. APIs.",
+    "I don’t “explore” tools — I deploy them. I focus on building systems that work when I’m not watching. Because for me, this isn’t a portfolio. It’s a living ecosystem of shipped ideas.",
+    "Right now, I’m a novice in the internship world — but not in delivery. I’m actively looking to work with startups or product-focused teams where I can learn fast, solve problems, and contribute from Day 1. I bring energy, speed, accountability — and I build with intent.",
+    "If it’s simple, I scale it.",
+    "If it’s complex, I simplify it.",
+    "And if it looks impossible — I’m already in the code."
   ],
 };
 
@@ -27,8 +34,8 @@ export const projectsData: Project[] = [
     imageUrl: '/main.png',
     imageHint: 'healthcare platform',
     tags: ['Healthcare', 'Wellness', 'Web Platform'],
-    liveUrl: 'https://uhi-main.netlify.app/', 
-    repoUrl: undefined, 
+    liveUrl: 'https://uhi-main.netlify.app/',
+    repoUrl: undefined,
   },
   {
     id: 'proj2',
@@ -53,12 +60,12 @@ export const projectsData: Project[] = [
   {
     id: 'proj4',
     title: 'TechGear - Gadgets & Accessories Hub',
-    description: 'Your one-stop e-commerce platform for the latest computer peripherals, mobile accessories, and tech gadgets. Browse, compare, and purchase with ease.',
-    imageUrl: '/tech.png',
-    imageHint: 'tech accessories',
-    tags: ['E-commerce', 'Tech', 'Accessories', 'Online Store'],
-    liveUrl: undefined,
-    repoUrl: 'https://github.com/The-arcane/e-com',
+    description: 'Your one-stop e-commerce platform for the latest computer peripherals, mobile accessories, and tech gadgets. Browse, compare, and purchase with ease, featuring secure admin controls and real-time inventory management.',
+    imageUrl: '/techgear.png',
+    imageHint: 'tech ecommerce',
+    tags: ['E-commerce', 'Tech', 'Full-Stack', 'Admin Portal'],
+    liveUrl: 'https://techgear2.netlify.app/',
+    repoUrl: undefined, // Changed from 'https://github.com/The-arcane/e-com'
   },
 ];
 
@@ -78,7 +85,7 @@ export const resumeData: ResumeData = {
       id: 'exp2',
       role: 'CORE MEMBER',
       company: 'Nexel - Incubation Cell',
-      dateRange: '2024 - present',
+      dateRange: '2025 - present',
       responsibilities: [
         "Founding member involved in building the cell from scratch.",
         "Leading networking and investor outreach, creating connections with mentors and early-stage investors.",
@@ -98,7 +105,7 @@ export const resumeData: ResumeData = {
       id: 'edu2',
       institution: 'DL DAV MODEL SCHOOL, PITAMPURA',
       degree: 'Senior Secondary - Science (Non-Medical)',
-      dateRange: 'Completed', 
+      dateRange: 'Completed',
       details: '',
     },
   ] as EducationItem[],
@@ -140,7 +147,7 @@ export const IconMap = {
   Briefcase,
   GraduationCap,
   Lightbulb,
-  Code: CodeXml, 
+  Code: CodeXml,
   ExternalLink,
   Phone,
   Mail,
