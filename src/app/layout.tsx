@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,4 +36,3 @@ export default function RootLayout({
     </html>
   );
 }
-
