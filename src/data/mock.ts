@@ -131,10 +131,11 @@ export const resumeData: ResumeData = {
     { id: 'skill7', name: 'Entrepreneurial Strategy & Innovation', category: 'Strategy' },
   ] as SkillItem[],
   achievements: [
-    { id: 'ach1', description: 'Top 25 Finalist - Hack2Hustle Hackathon (among 200+ teams)' },
-    { id: 'ach2', description: 'Top 5 Finalist - Battle of Coders (BOC) DSA Coding Competition' },
-    { id: 'ach3', description: 'Organized 2 major entrepreneurial events under ED Mantics, including flagship event Avsar' },
-    { id: 'ach4', description: 'Currently building a Technical Society to foster coding, hackathons, and student innovation' },
+    { id: 'ach1', description: 'Mentor – Build-a-Thon 2025: Mentored Top 30 finalist teams during the offline round, shortlisted from 500+ participating teams, guiding them on problem-solving, system design, and execution' },
+    { id: 'ach2', description: 'Founder & President – Quantaloop: Founded and currently leading the technical society of BVIMR, focused on building a strong coding culture, promoting hackathons, and enabling student-led innovation' },
+    { id: 'ach3', description: 'Top 25 Finalist – Hack2Hustle Hackathon: Ranked among the Top 25 teams out of 200+ participants' },
+    { id: 'ach4', description: 'Top 5 Finalist – Battle of Coders (BOC) DSA Coding Competition' },
+    { id: 'ach5', description: 'Event Lead & Organizer – Nexel: Organized two major Technical & entrepreneurial events' },
   ] as AchievementItem[],
   certifications: [
     "Explore Generative AI with the Gemini API in Vertex AI",
