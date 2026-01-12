@@ -17,7 +17,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <CardHeader className="p-0">
         <Image
           src={project.imageUrl}
-          alt={project.title}
+          alt={`Screenshot of ${project.title}`}
           width={600}
           height={400}
           className="w-full h-auto max-h-[400px] rounded-t-lg object-contain bg-card"
