@@ -65,20 +65,32 @@ export const projectsData: Project[] = [
     imageHint: 'tech ecommerce',
     tags: ['E-commerce', 'Tech', 'Full-Stack', 'Admin Portal'],
     liveUrl: 'https://techgear2.netlify.app/',
-    repoUrl: undefined, // Changed from 'https://github.com/The-arcane/e-com'
+    repoUrl: undefined,
   },
 ];
 
 export const resumeData: ResumeData = {
   experience: [
     {
-      id: 'exp1',
-      role: 'CORE MEMBER',
-      company: 'ED Mantics - The Entrepreneurship Development Cell',
-      dateRange: '2024 - present',
+      id: 'exp0',
+      role: 'Tech Intern & Project Lead',
+      company: 'Innowise (Client: PickleBugs)',
+      dateRange: 'June 2025 - Present',
       responsibilities: [
-        "Promoting entrepreneurial thinking through workshops, mentorship, and startup pitch events.",
-        "Successfully part of the organizing team for two major events, including the entrepreneurial Event Avsar, managing outreach, logistics, and execution."
+        "Worked as a Tech Intern at Innowise on the Picklebugs platform, a company co-founded by Virender Sehwag.",
+        "Led the technical side of the project while building the complete system end-to-end, including customer and admin applications, database setup, AI workflows, and core platform logic.",
+        "Handled the entire development lifecycle independently, from implementation to final delivery."
+      ],
+    },
+    {
+      id: 'exp1',
+      role: 'Founder & President',
+      company: 'QuantaLoop Technical Society (BVIMR)',
+      dateRange: '2025-present',
+      responsibilities: [
+        'Founded and leading QuantaLoop, a student-led tech society built from scratch to promote innovation and technical growth.',
+        'Driving strategy, events, and community initiatives with a focus on impact and excellence.',
+        'Committed to elevating ideas beyond the ordinary—because average isn’t the goal.',
       ],
     },
     {
@@ -98,7 +110,7 @@ export const resumeData: ResumeData = {
       id: 'edu1',
       institution: 'BVIMR - BHARATI VIDYAPEETH INSTITUTE OF MANAGEMENT & RESEARCH',
       degree: 'Bachelor of Computer Applications (BCA)',
-      dateRange: '2023 - 2026 (Expected)',
+      dateRange: '2024 - 2027',
       details: 'Specializing in Programming, Web Development, and AI. Active contributor to entrepreneurship societies. Built multiple real-world applications through project-based learning.',
     },
     {
@@ -111,9 +123,9 @@ export const resumeData: ResumeData = {
   ] as EducationItem[],
   skills: [
     { id: 'skill1', name: 'Web Development (HTML, CSS, JavaScript)', category: 'Web Development' },
-    { id: 'skill2', name: 'React, Node.js, Next.js (Beginner)', category: 'Frameworks/Libraries' },
-    { id: 'skill3', name: 'Machine Learning & Generative AI (Beginner)', category: 'AI/ML' },
-    { id: 'skill4', name: 'Prompt Engineering & AI Tooling (Beginner)', category: 'AI/ML' },
+    { id: 'skill2', name: 'React, Node.js, Next.js', category: 'Frameworks/Libraries' },
+    { id: 'skill3', name: 'Machine Learning & Generative AI', category: 'AI/ML' },
+    { id: 'skill4', name: 'Prompt Engineering & AI Tooling', category: 'AI/ML' },
     { id: 'skill5', name: 'Leadership, Event Management & Team Building', category: 'Soft Skills' },
     { id: 'skill6', name: 'Investor Communication & Outreach', category: 'Communication' },
     { id: 'skill7', name: 'Entrepreneurial Strategy & Innovation', category: 'Strategy' },
@@ -166,4 +178,3 @@ export const IconMap = {
   Network,
   CodeXml,
 };
-
