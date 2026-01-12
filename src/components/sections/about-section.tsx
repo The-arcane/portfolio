@@ -8,17 +8,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 export function AboutSection() {
   return (
     <SectionWrapper id="about" title="About Me">
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-start"> {/* Changed items-center to items-start */}
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-start">
         <div className="md:col-span-1 flex justify-center md:justify-start">
            <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-accent shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-accent/50 transition-all duration-300 ease-out">
-            <AvatarImage src="/profile-pic.jpeg" alt="A photograph of Raunaq Adlakha" data-ai-hint="profile picture" />
+            <AvatarImage asChild src="/profile-pic.jpeg" alt="A photograph of Raunaq Adlakha" data-ai-hint="profile picture">
+                <Image src="/profile-pic.jpeg" alt="A photograph of Raunaq Adlakha" width={256} height={256} priority />
+            </AvatarImage>
             <AvatarFallback className="text-4xl bg-primary text-primary-foreground">{userProfileData.name.substring(0,2).toUpperCase()}</AvatarFallback>
           </Avatar>
         </div>
         <div className="md:col-span-2">
-          <h1 className="text-2xl md:text-3xl font-headline font-semibold mb-4 text-primary-foreground">
+          <h2 className="text-2xl md:text-3xl font-headline font-semibold mb-4 text-primary-foreground">
             {userProfileData.name}
-          </h1>
+          </h2>
           <p className="text-lg md:text-xl font-headline text-accent mb-6">
             {userProfileData.title}
           </p>

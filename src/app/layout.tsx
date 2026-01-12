@@ -5,6 +5,16 @@ import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
 import ClientOnly from "@/components/client-only";
 import { userProfileData } from "@/data/mock";
+import { Open_Sans, Roboto } from 'next/font/google';
+import { cn } from "@/lib/utils";
+
+const openSans = Open_Sans({ subsets: ['latin'], variable: '--font-open-sans' });
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-roboto',
+});
+
 
 // IMPORTANT: Replace with your actual domain when you deploy
 const siteUrl = "https://your-portfolio-url.com";
@@ -66,7 +76,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className="font-body antialiased bg-background text-foreground"
+        className={cn("font-body antialiased bg-background text-foreground", openSans.variable, roboto.variable)}
         suppressHydrationWarning
       >
         <ClientOnly>
