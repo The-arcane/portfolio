@@ -14,9 +14,9 @@ const MongoDbIcon = () => (
 const tools = [
   { name: 'JavaScript', icon: <Badge className="text-2xl p-3 bg-yellow-400 text-black hover:bg-yellow-500">JS</Badge> },
   { name: 'TailwindCSS', icon: <Wind className="w-10 h-10 text-sky-500" /> },
-  { name: 'React (Beginner)', icon: <Atom className="w-10 h-10 text-sky-400" /> },
-  { name: 'Next.js (Beginner)', icon: <div className="font-bold text-xl border-2 border-foreground rounded-md p-2 w-10 h-10 flex items-center justify-center bg-black">N</div> },
-  { name: 'Node.js (Beginner)', icon: <Server className="w-10 h-10 text-green-600" /> },
+  { name: 'React', icon: <Atom className="w-10 h-10 text-sky-400" /> },
+  { name: 'Next.js', icon: <div className="font-bold text-xl border-2 border-foreground rounded-md p-2 w-10 h-10 flex items-center justify-center bg-black">N</div> },
+  { name: 'Node.js', icon: <Server className="w-10 h-10 text-green-600" /> },
   { name: 'Git', icon: <GitFork className="w-10 h-10 text-orange-600" /> },
   { name: 'Express.js', icon: <span className="text-3xl font-mono text-gray-400">ex</span> },
   { name: 'TypeScript', icon: <Badge className="text-2xl p-3 bg-blue-600 text-white hover:bg-blue-700">TS</Badge> },
