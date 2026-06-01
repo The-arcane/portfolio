@@ -106,7 +106,7 @@ export const resumeData: ResumeData = {
       id: 'exp0',
       role: 'Tech Intern & Project Lead',
       company: 'Innowise (Client: Picklebugs - Co-founded by Virender Sehwag)',
-      dateRange: 'July 2025 - Present',
+      dateRange: 'July 2025 - Dec 2025',
       responsibilities: [
         'Engineered the complete Picklebugs platform, architecting customer-facing systems, admin portals, and database infrastructure across 5+ business verticals.',
         'Implemented industry-specific systems for hospitality, residences, education, and sports courts with role-based access control and unit-tested modules.',
