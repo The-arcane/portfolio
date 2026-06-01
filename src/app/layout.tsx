@@ -15,40 +15,75 @@ const roboto = Roboto({
   variable: '--font-roboto',
 });
 
-
-// IMPORTANT: Replace with your actual domain when you deploy
-const siteUrl = "https://your-portfolio-url.com";
+const siteUrl = "https://raunaq-adlakha.vercel.app";
+const siteTitle = "Raunaq Adlakha | Full-Stack Developer, Founder & AI Builder";
+const siteDescription =
+  "Portfolio of Raunaq Adlakha, a full-stack software developer, founder, and technology leader building scalable web products, AI-powered systems, event platforms, automation workflows, and business software.";
 
 export const metadata: Metadata = {
-  title: "Raunaq Adlakha - Technologist & Innovator Portfolio",
-  description: "The official portfolio for Raunaq Adlakha, an aspiring technologist and innovator specializing in web development, AI, and ML. Discover my projects, skills, and experience.",
-  keywords: ["Raunaq Adlakha", "Portfolio", "Web Developer", "AI", "ML", "React", "Next.js", "Technologist", "Innovator"],
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s | Raunaq Adlakha",
+  },
+  description: siteDescription,
+  applicationName: "Raunaq Adlakha Portfolio",
+  keywords: [
+    "Raunaq Adlakha",
+    "Raunaq Adlakha portfolio",
+    "Full Stack Developer",
+    "Software Developer",
+    "Founder",
+    "Technology Leader",
+    "AI Developer",
+    "Automation Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "TypeScript Developer",
+    "PostgreSQL",
+    "Google Gemini",
+    "Vertex AI",
+    "n8n",
+    "Event Management Platform",
+    "Certificate Automation",
+    "QRBlaze",
+    "CertiFrenzy",
+    "UHI Care",
+    "MediBot",
+    "Slack AI Agent Builder",
+    "SparkEdge Innovations",
+    "QuantaLoop",
+    "Delhi developer",
+  ],
   authors: [{ name: "Raunaq Adlakha", url: siteUrl }],
   creator: "Raunaq Adlakha",
   publisher: "Raunaq Adlakha",
-  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
+  category: "technology",
   openGraph: {
     type: "website",
-    url: siteUrl,
-    title: "Raunaq Adlakha - Technologist & Innovator Portfolio",
-    description: "The official portfolio for Raunaq Adlakha, an aspiring technologist and innovator specializing in web development, AI, and ML.",
+    locale: "en_IN",
+    url: "/",
+    title: siteTitle,
+    description: siteDescription,
     images: [
       {
-        url: "/profile-pic.jpeg", // Using relative path for Open Graph image
+        url: "/profile-pic.jpeg",
         width: 800,
         height: 800,
         alt: "Profile picture of Raunaq Adlakha",
       },
     ],
-    siteName: "Raunaq Adlakha's Portfolio",
+    siteName: "Raunaq Adlakha Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@yourtwitterhandle", // Optional: replace with your Twitter handle
-    creator: "@yourtwitterhandle", // Optional: replace with your Twitter handle
-    title: "Raunaq Adlakha - Technologist & Innovator Portfolio",
-    description: "The official portfolio for Raunaq Adlakha, specializing in web development, AI, and ML.",
-    images: [`${siteUrl}/profile-pic.jpeg`],
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/profile-pic.jpeg"],
   },
   robots: {
     index: true,
@@ -61,6 +96,48 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Raunaq Adlakha",
+  url: siteUrl,
+  image: `${siteUrl}/profile-pic.jpeg`,
+  jobTitle: "Full-Stack Software Developer",
+  email: "mailto:raunaq.adlakha@gmail.com",
+  telephone: "+91 8826907327",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Delhi",
+    addressCountry: "IN",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Bharati Vidyapeeth Institute of Management and Research",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/raunaq-adlakha/",
+    "https://github.com/The-arcane",
+  ],
+  knowsAbout: [
+    "Full-stack software development",
+    "React",
+    "Next.js",
+    "Node.js",
+    "TypeScript",
+    "PostgreSQL",
+    "Google Gemini",
+    "Vertex AI",
+    "n8n automation",
+    "AI-powered systems",
+    "Event management platforms",
+  ],
 };
 
 
@@ -73,6 +150,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
       </head>
 
       <body
