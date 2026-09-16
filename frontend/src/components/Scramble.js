@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>/_#";
@@ -9,7 +9,7 @@ const Scramble = ({ text, className = "", auto = false }) => {
   const [out, setOut] = useState(text);
   const raf = useRef(null);
 
-  const run = () => {
+  const run = useCallback(() => {
     cancelAnimationFrame(raf.current);
     let frame = 0;
     const step = () => {
@@ -28,12 +28,12 @@ const Scramble = ({ text, className = "", auto = false }) => {
       else setOut(text);
     };
     raf.current = requestAnimationFrame(step);
-  };
+  }, [text]);
 
   useEffect(() => {
     if (auto && inView) run();
     return () => cancelAnimationFrame(raf.current);
-  }, [auto, inView]);
+  }, [auto, inView, run]);
 
   return (
     <span ref={ref} className={className} onMouseEnter={run} data-hover>

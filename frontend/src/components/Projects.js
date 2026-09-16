@@ -33,7 +33,7 @@ const Card = ({ p, i, rail = false }) => {
           src={p.img}
           alt={p.title}
           loading="lazy"
-          className="w-full h-full object-cover object-top grayscale-[0.6] group-hover:grayscale-0 group-hover:scale-[1.04] transition-all duration-[900ms] ease-out"
+          className="w-full h-full object-cover object-top grayscale-[0.6] group-hover:grayscale-0 group-hover:scale-[1.04] transition-all duration-[time:900ms] ease-out"
         />
         <span className="absolute top-3 left-3 z-10 font-mono text-[10px] bg-void/80 backdrop-blur px-2 py-1 text-acid border border-white/10">
           {p.id}
