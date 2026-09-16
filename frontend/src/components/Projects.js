@@ -5,6 +5,9 @@ import { Reveal, SectionHead } from "@/components/Reveal";
 import { PROJECTS } from "@/data/content";
 import { PROFILE } from "@/data/content";
 
+// The public portfolio mirrors the projects listed on the current resume.
+const RESUME_PROJECTS = PROJECTS.slice(0, 4);
+
 const Card = ({ p, i, rail = false }) => {
   const ref = useRef(null);
 
@@ -105,11 +108,11 @@ const Rail = () => {
             <span className="font-mono text-xs text-acid">03</span>
             <h2 className="font-display font-extrabold text-4xl lg:text-5xl tracking-tight">SELECTED WORK</h2>
           </div>
-          <span className="font-mono text-[10px] lg:text-xs text-dim tracking-[0.15em]">SCROLL TO DRIVE → 2024 — 2026 · 06 SHIPPED</span>
+            <span className="font-mono text-[10px] lg:text-xs text-dim tracking-[0.15em]">SCROLL TO DRIVE · 04 SHIPPED</span>
         </div>
 
         <motion.div ref={trackRef} style={{ x }} className="relative z-10 flex gap-8 pl-10 pr-10 will-change-transform">
-          {PROJECTS.map((p, i) => (
+          {RESUME_PROJECTS.map((p, i) => (
             <Card key={p.id} p={p} i={i} rail />
           ))}
           <a
@@ -138,9 +141,9 @@ const Rail = () => {
 const Projects = () => (
   <section id="work" data-testid="projects-section" className="py-24 md:py-0 md:pb-0">
     <div className="md:hidden px-6">
-      <SectionHead index="03" title="SELECTED WORK" hint="06 SHIPPED" />
+      <SectionHead index="03" title="SELECTED WORK" hint="04 SHIPPED" />
       <div className="flex flex-col gap-6">
-        {PROJECTS.map((p, i) => (
+        {RESUME_PROJECTS.map((p, i) => (
           <Reveal key={p.id} delay={0.05}>
             <Card p={p} i={i} />
           </Reveal>

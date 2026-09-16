@@ -109,7 +109,7 @@ export const EDUCATION = [
 export const PROJECTS = [
   {
     id: "P.01",
-    title: "Event Management, Attendance & Certificate Automation",
+    title: "QRBlaze & CertiFrenzy: Event Management Automation",
     blurb: "Complete event platform — registration, QR-pass generation, automated email delivery, real-time check-ins, attendance tracking, coordinator management, feedback and QR-verified certificates. Powered by QRBlaze & CertiFrenzy.",
     tags: ["NEXT.JS", "REACT", "TYPESCRIPT", "NODE.JS", "AUTOMATION"],
     img: "/assets/event.png",
@@ -117,7 +117,7 @@ export const PROJECTS = [
   },
   {
     id: "P.02",
-    title: "UHIcare — Digital Open Healthcare Ecosystem",
+    title: "UHI Care: Open Healthcare Platform",
     blurb: "Open healthcare platform with WebRTC video consultations, AI-powered scheduling, prescription generation, secure auth, payments and automated notifications for 500+ users.",
     tags: ["REACT", "NODE.JS", "SUPABASE", "WEBRTC", "AI"],
     img: "/assets/main.png",
