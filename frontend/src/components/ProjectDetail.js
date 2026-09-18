@@ -15,7 +15,7 @@ const ProjectDetail = () => {
       <div>
         <span className="font-mono text-xs tracking-[0.25em] text-acid">{project.id} · CASE STUDY</span>
         <h1 className="font-display font-black text-3xl sm:text-5xl lg:text-6xl leading-[0.98] tracking-tight mt-5">{project.title}</h1>
-        <p className="font-mono text-sm text-dim leading-relaxed mt-6 max-w-xl">{project.description}</p>
+        <div className="font-mono text-sm text-dim leading-relaxed mt-6 max-w-xl space-y-4">{project.description.split("\n\n").map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
         <div className="flex flex-wrap gap-2 mt-7">{project.tags.map((tag) => <span key={tag} className="font-mono text-[10px] tracking-widest border border-white/15 px-2.5 py-1.5 text-bone/70">{tag}</span>)}</div>
         <div className="flex flex-wrap gap-3 mt-8"><Action enabled={project.links.github.enabled} href={project.links.github.url} icon={<Github size={15} />}>GITHUB</Action><Action enabled={project.links.demo.enabled} href={project.links.demo.url} icon={<ExternalLink size={15} />} primary>LIVE DEMO</Action></div>
       </div>

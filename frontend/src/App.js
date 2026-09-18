@@ -38,7 +38,6 @@ function Home() {
   return (
     <div className="bg-void text-bone font-mono min-h-screen">
       <div className="noise" />
-      <Cursor />
       <AnimatePresence>
         {loading && <Preloader onDone={() => setLoading(false)} />}
       </AnimatePresence>
@@ -59,7 +58,7 @@ function Home() {
 }
 
 function App() {
-  return <BrowserRouter><Routes><Route path="/" element={<Home />} /><Route path="/projects/:slug" element={<ProjectDetail />} /></Routes></BrowserRouter>;
+  return <BrowserRouter><Cursor /><Routes><Route path="/" element={<Home />} /><Route path="/projects/:slug" element={<ProjectDetail />} /></Routes></BrowserRouter>;
 }
 
 export default App;

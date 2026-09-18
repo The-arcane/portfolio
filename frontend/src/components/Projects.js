@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Github, ExternalLink } from "lucide-react";
 import { Reveal, SectionHead } from "@/components/Reveal";
@@ -15,6 +15,7 @@ const ProjectLinks = ({ project, compact = false }) => (
 
 const Card = ({ project, index, rail = false }) => {
   const ref = useRef(null);
+  const navigate = useNavigate();
   const onMove = (event) => {
     const box = ref.current?.getBoundingClientRect();
     if (!box) return;
@@ -22,7 +23,18 @@ const Card = ({ project, index, rail = false }) => {
     ref.current.style.setProperty("--my", `${event.clientY - box.top}px`);
   };
   return (
-    <article ref={ref} onMouseMove={onMove} data-testid={`project-card-${index}`} data-hover className={`group relative shrink-0 overflow-hidden border border-white/10 bg-ink ${rail ? "w-[82vw] sm:w-[58vw] lg:w-[43vw]" : "w-full"}`}>
+    <article
+      ref={ref}
+      onMouseMove={onMove}
+      onClick={(event) => { if (!event.target.closest("a")) navigate(`/projects/${project.slug}`); }}
+      onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") navigate(`/projects/${project.slug}`); }}
+      role="link"
+      tabIndex={0}
+      aria-label={`Open ${project.title} case study`}
+      data-testid={`project-card-${index}`}
+      data-hover
+      className={`group relative shrink-0 overflow-hidden border border-white/10 bg-ink cursor-pointer ${rail ? "w-[82vw] sm:w-[58vw] lg:w-[43vw]" : "w-full"}`}
+    >
       <div className="pointer-events-none absolute inset-0 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ background: "radial-gradient(340px circle at var(--mx, 50%) var(--my, 50%), rgba(200,255,46,0.10), transparent 65%)" }} />
       <Link to={`/projects/${project.slug}`} className="block relative overflow-hidden border-b border-white/10 aspect-[16/9]">
         <img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover object-top grayscale-[0.55] group-hover:grayscale-0 group-hover:scale-[1.04] transition-all duration-[time:900ms] ease-out" />
