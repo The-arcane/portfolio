@@ -1,0 +1,68 @@
+export const PROJECTS = [
+  {
+    id: "P.01", slug: "prestige-school-mobile", title: "Prestige School: Mobile App", image: "/assets/prestige.png",
+    summary: "A Play Store Early Access school-management app for Prestige Junior School, serving 120+ active users across six role-based portals.",
+    description: "A mobile-first operating system for day-to-day school workflows. It gives administrators, teachers, parents, staff and security teams one dependable place for attendance, academics and fees.",
+    highlights: ["Six dedicated role-based portals", "QR student and staff attendance with check-in/check-out tracking", "Assignments, grades, fees and results in one mobile workflow", "Supabase sessions, protected Express APIs and native PDF receipt sharing"],
+    tags: ["REACT NATIVE", "EXPO", "TYPESCRIPT", "NODE.JS", "SUPABASE"],
+    links: { github: { enabled: true, url: "https://github.com/The-arcane/school-management-react-native" }, demo: { enabled: false, url: "" } },
+  },
+  {
+    id: "P.02", slug: "prestige-school-web", title: "Prestige School: Web Platform", image: "/assets/prestige_web.png",
+    summary: "The complete web companion for Prestige Junior School, extending the school-management workflow beyond the mobile app.",
+    description: "A browser-based management experience that keeps school operations accessible from desktop, with the same role-aware approach behind the Prestige ecosystem.",
+    highlights: ["Desktop-first companion to the Prestige mobile application", "Centralized operational workflows for school teams", "Designed around role-aware access and day-to-day administration"],
+    tags: ["WEB APP", "REACT", "ROLE-BASED ACCESS", "SCHOOL TECH"],
+    links: { github: { enabled: false, url: "" }, demo: { enabled: false, url: "" } },
+  },
+  {
+    id: "P.03", slug: "success-arrow-tracker", title: "Success Arrow Tracker", image: "/assets/success.png",
+    summary: "A sales and distribution operating system for inventory, field orders, geofencing and invoicing.",
+    description: "Built for manufacturers and distributors that need reliable visibility across inventory movement, retailer orders and field-sales activity.",
+    highlights: ["Manufacturer and distributor inventory workflows", "Geofenced retailer ordering for field sales executives", "Order capture through invoicing with centralized visibility", "Role-based operations for distributors, executives and retailer workflows"],
+    tags: ["SALES TECH", "INVENTORY", "GEOFENCING", "ORDER MANAGEMENT"],
+    links: { github: { enabled: false, url: "" }, demo: { enabled: false, url: "" } },
+  },
+  {
+    id: "P.04", slug: "qrblaze-certifrenzy", title: "QRBlaze & CertiFrenzy", image: "/assets/event.png",
+    summary: "Event registration, QR attendance and certificate automation connected in one operating system.",
+    description: "A complete event workflow from registration through attendance verification to certificate issuance, reducing manual coordination at every stage.",
+    highlights: ["QR passes and automated participant emails", "Volunteer and coordinator attendance workflows", "Template-based certificate generation", "QR authenticity verification and attendance-to-certificate automation"],
+    tags: ["NEXT.JS", "REACT", "TYPESCRIPT", "NODE.JS", "AUTOMATION"],
+    links: { github: { enabled: false, url: "" }, demo: { enabled: false, url: "" } },
+  },
+  {
+    id: "P.05", slug: "uhi-care", title: "UHI Care", image: "/assets/main.png",
+    summary: "An open healthcare platform with video consultations, AI scheduling and patient workflows for 500+ users.",
+    description: "A secure healthcare experience that combines real-time consultations, prescription generation, scheduling and automated communications.",
+    highlights: ["WebRTC video consultations", "AI-assisted scheduling and notifications", "Secure authentication, payments and structured data syncing", "REST API-driven healthcare workflows"],
+    tags: ["REACT", "NODE.JS", "SUPABASE", "WEBRTC", "AI"],
+    links: { github: { enabled: true, url: "https://github.com/The-arcane/UHI-MAIN" }, demo: { enabled: true, url: "https://uhi-main.netlify.app/" } },
+  },
+  {
+    id: "P.06", slug: "slotic", title: "Slotic", image: "/assets/slotic.png",
+    summary: "An AI WhatsApp receptionist for clinic appointments, token queues and zero-double-booking operations.",
+    description: "A Hinglish-capable appointment automation system that helps clinics handle booking, rescheduling, cancellations and patient communication around the clock.",
+    highlights: ["Natural Hinglish appointment conversations", "Live availability and zero-double-booking logic", "Automated OPD token queues, confirmations and reminders", "Django REST backend with staff exports"],
+    tags: ["N8N", "WHATSAPP API", "DJANGO", "POSTGRESQL", "REST API"],
+    links: { github: { enabled: false, url: "" }, demo: { enabled: false, url: "" } },
+  },
+  {
+    id: "P.07", slug: "artbling", title: "Artbling", image: "/assets/artbling.png",
+    summary: "An AI WhatsApp sales assistant for jewelry discovery, order conversations and Shopify-connected customer operations.",
+    description: "A conversational sales system that turns WhatsApp into a responsive storefront while giving the business a central CRM view of customers and campaigns.",
+    highlights: ["AI product discovery and conversational order-taking", "Real-time Shopify order-status synchronization", "Central CRM for conversations and campaign launches"],
+    tags: ["N8N", "WHATSAPP API", "SHOPIFY API", "AI CHATBOT", "CRM"],
+    links: { github: { enabled: false, url: "" }, demo: { enabled: false, url: "" } },
+  },
+  {
+    id: "P.08", slug: "medibot", title: "MediBot", image: "/assets/med.png",
+    summary: "A Gemini-powered wellness assistant for personalized health guidance, routines and reminders.",
+    description: "A conversational AI assistant that brings wellness guidance, appointment support and medication reminders into one accessible interface.",
+    highlights: ["Google Gemini API-powered conversations", "Personalized wellness and fitness guidance", "Appointment booking and medication reminders"],
+    tags: ["REACT", "NODE.JS", "GEMINI API", "NLP"],
+    links: { github: { enabled: true, url: "https://github.com/The-arcane/uhi-superbot" }, demo: { enabled: true, url: "https://healthbot-uhi.netlify.app/" } },
+  },
+];
+
+export const getProject = (slug) => PROJECTS.find((project) => project.slug === slug);

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Lenis from "lenis";
 import Preloader from "@/components/Preloader";
 import Cursor from "@/components/Cursor";
@@ -13,8 +14,9 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Credentials from "@/components/Credentials";
 import Contact from "@/components/Contact";
+import ProjectDetail from "@/components/ProjectDetail";
 
-function App() {
+function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -54,6 +56,10 @@ function App() {
       </main>
     </div>
   );
+}
+
+function App() {
+  return <BrowserRouter><Routes><Route path="/" element={<Home />} /><Route path="/projects/:slug" element={<ProjectDetail />} /></Routes></BrowserRouter>;
 }
 
 export default App;

@@ -27,9 +27,9 @@ const Manifesto = () => (
   <section id="about" data-testid="manifesto-section" className="relative px-6 md:px-10 py-24 md:py-36">
     <SectionHead index="01" title="THE MANIFESTO" hint="04 CHAPTERS — NO FLUFF" />
 
-    <div className="space-y-20 md:space-y-28">
+    <div className="space-y-12 md:space-y-16">
       {CHAPTERS.map((c, i) => (
-        <div key={c.num} className="grid md:grid-cols-12 gap-6 md:gap-10 items-start">
+        <div key={c.num} className="grid md:grid-cols-12 gap-6 md:gap-6 items-start">
           <Reveal className={`md:col-span-3 ${i % 2 ? "md:order-3 md:text-right" : ""}`}>
             <span className="font-display font-black text-6xl md:text-8xl text-stroke-faint leading-none" data-hover>
               {c.num}

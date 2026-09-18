@@ -19,7 +19,7 @@ const Word = ({ children, progress, range, acid }) => {
 
 const BigStatement = () => {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.85", "end 0.45"] });
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.95", "end 0.1"] });
   const words = TEXT.split(" ");
 
   return (
@@ -32,7 +32,7 @@ const BigStatement = () => {
           <Word
             key={i}
             progress={scrollYProgress}
-            range={[i / words.length, Math.min(1, (i + 1.5) / words.length)]}
+            range={[i / words.length * 0.68, Math.min(0.82, (i + 2) / words.length * 0.68)]}
             acid={ACID_WORDS.has(w)}
           >
             {w}
